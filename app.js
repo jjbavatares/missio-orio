@@ -8,9 +8,63 @@ let mission = new Mission(TRIALS);
 let feedback = '';
 let values = [];
 let endingSounds = [];
+let assetsReady = false;
+let assetsLoading = false;
+let loadedAssets = 0;
+let loadingError = false;
+const preparedImages = new Map();
+const missionAssets = [...new Set([
+  'assets/story-v2.webp', ...TRIALS.map(t => t.image),
+  'assets/victory-v2.webp', 'assets/landing-v2.webp',
+  'assets/crash-v2.webp', 'assets/rocket-landed-v2.webp'
+])];
+function prepareImage(src) {
+  if (preparedImages.has(src)) return preparedImages.get(src);
+  const pending = new Promise((resolve, reject) => {
+    const img = new Image();
+    img.onload = async () => {
+      try { await img.decode(); } catch {}
+      resolve(img);
+    };
+    img.onerror = () => reject(new Error(src));
+    img.src = './' + src;
+  });
+  preparedImages.set(src, pending);
+  pending.catch(() => preparedImages.delete(src));
+  return pending;
+}
+function updatePreparation() {
+  if (mission.stage !== 'story') return;
+  const button = document.querySelector('[data-action="start"]');
+  const status = document.querySelector('#image-preparation');
+  if (!button || !status) return;
+  button.disabled = assetsLoading || (!loadingError && (!assetsReady || !document.querySelector('#ready')?.checked));
+  button.textContent = loadingError ? 'Tornar a carregar les imatges' : 'Iniciar la primera prova';
+  status.textContent = loadingError
+    ? 'No s’han pogut carregar totes les imatges. Comprova la connexió i torna-ho a provar. El rellotge encara no ha començat.'
+    : assetsReady ? 'Il·lustracions preparades. Ja pots començar quan tinguis el material a punt.'
+    : `Preparant les il·lustracions: ${loadedAssets}/${missionAssets.length}. El rellotge encara no ha començat.`;
+}
+async function prepareMissionImages() {
+  if (assetsLoading || assetsReady) return;
+  assetsLoading = true; loadingError = false; loadedAssets = 0;
+  updatePreparation();
+  let cursor = 0;
+  await Promise.all(Array.from({length: 2}, async () => {
+    while (cursor < missionAssets.length) {
+      const src = missionAssets[cursor++];
+      try { await prepareImage(src); loadedAssets++; }
+      catch { loadingError = true; }
+      updatePreparation();
+    }
+  }));
+  assetsLoading = false;
+  assetsReady = !loadingError;
+  updatePreparation();
+}
 const e = value => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const image = (src, alt, className = '') => `<img src="./${src}" alt="${e(alt)}" class="${className}" decoding="async">`;
-const branding = () => `<div class="jjb-branding">${image('assets/jjb-avatares.png','JJB Avatares amb IA')}</div>`;
+const branding = () => `<div class="jjb-branding">${image('assets/jjb-avatares-v2.webp','JJB Avatares amb IA')}</div>`;
 const formatted = number => new Intl.NumberFormat('ca-ES').format(number);
 
 function header() {
@@ -27,7 +81,7 @@ function hud() {
 function footer() { return `<footer class="page-footer"><span>Missió Orió · Matemàtiques de 1r d’ESO</span><span>Calcula amb paper i llapis. Confia en el teu procediment.</span></footer>`; }
 
 function home() {
-  return `<main id="main" tabindex="-1" class="animate-in"><section class="hero"><div class="hero-copy"><p class="eyebrow">Una aventura de nombres naturals</p><h1>MISSIÓ ORIÓ<span>RETORN<br>A LA TERRA</span></h1><p>La nau està avariada. Els sistemes no responen. Els teus càlculs són l’única manera de tornar a casa.</p><div class="facts"><div class="fact"><strong>12</strong><span>proves espacials</span></div><div class="fact"><strong>45 min</strong><span>per completar la missió</span></div><div class="fact"><strong>8 encerts</strong><span>per aterrar amb èxit</span></div></div></div><div class="hero-art">${image('assets/cover.webp','Un coet de còmic sobrevola la Terra entre estrelles')}<span class="stamp">EL RETORN DEPÈN DE TU</span></div></section><section class="briefing" aria-label="Preparació abans de començar"><div><h3>PREPARA EL MATERIAL</h3><p>Tingues paper i llapis a punt. Treballaràs individualment i sense calculadora.</p></div><div><h3>VIGILA EL RELLOTGE</h3><p>La primera prova inicia els 45 minuts. El temps continua amb les pistes i les celebracions. Quan arriba a zero, la nau explota.</p></div><div><h3>NO ES DESA EL PROGRÉS</h3><p>Si tanques o recarregues la pàgina, hauràs de començar de nou. Encertar amb pistes també compta.</p></div></section><div class="start-row"><p>Primer descobriràs què ha passat. El rellotge encara no començarà.</p><button class="button" data-action="story">Començar</button></div>${branding()}</main>`;
+  return `<main id="main" tabindex="-1" class="animate-in"><section class="hero"><div class="hero-copy"><p class="eyebrow">Una aventura de nombres naturals</p><h1>MISSIÓ ORIÓ<span>RETORN<br>A LA TERRA</span></h1><p>La nau està avariada. Els sistemes no responen. Els teus càlculs són l’única manera de tornar a casa.</p><div class="facts"><div class="fact"><strong>12</strong><span>proves espacials</span></div><div class="fact"><strong>45 min</strong><span>per completar la missió</span></div><div class="fact"><strong>8 encerts</strong><span>per aterrar amb èxit</span></div></div></div><div class="hero-art">${image('assets/cover-v2.webp','Un coet de còmic sobrevola la Terra entre estrelles')}<span class="stamp">EL RETORN DEPÈN DE TU</span></div></section><section class="briefing" aria-label="Preparació abans de començar"><div><h3>PREPARA EL MATERIAL</h3><p>Tingues paper i llapis a punt. Treballaràs individualment i sense calculadora.</p></div><div><h3>VIGILA EL RELLOTGE</h3><p>La primera prova inicia els 45 minuts. El temps continua amb les pistes i les celebracions. Quan arriba a zero, la nau explota.</p></div><div><h3>NO ES DESA EL PROGRÉS</h3><p>Si tanques o recarregues la pàgina, hauràs de començar de nou. Encertar amb pistes també compta.</p></div></section><div class="start-row"><p>Primer descobriràs què ha passat. El rellotge encara no començarà.</p><button class="button" data-action="story">Començar</button></div>${branding()}</main>`;
 }
 
 const captions = [
@@ -39,7 +93,7 @@ const captions = [
   'Torna a la Terra! Amb 8 encerts de 12 podràs aterrar. Amb menys encerts, o si s’esgota el temps, la nau explotarà.'
 ];
 function story() {
-  return `<main id="main" tabindex="-1" class="animate-in"><div class="story-title"><div><p class="eyebrow">El que ha passat fins ara</p><h1>UNA MISSIÓ.<br>UNA OPORTUNITAT.</h1></div><p>Llegeix les vinyetes i prepara’t per ajudar NORA. El compte enrere encara no està en marxa.</p></div><section class="comic-grid" aria-label="Còmic de la missió">${captions.map((caption,i)=>`<article class="comic-panel"><div class="comic-scene" style="background-position:${(i%3)*50}% ${Math.floor(i/3)*100}%" role="img" aria-label="Vinyeta ${i+1} de l’aventura espacial"></div><span class="panel-num" aria-hidden="true">${i+1}</span><p class="comic-caption">${e(caption)}</p></article>`).join('')}</section><div class="story-rules"><p><strong>Els 45 minuts comencen amb la primera prova.</strong> El rellotge no s’atura amb els errors ni amb les pistes. La missió acaba després de les 12 proves o quan s’esgota el temps.</p><span class="eyebrow" style="margin:0;white-space:nowrap">8 de 12 per tornar</span></div><label class="ready"><input type="checkbox" id="ready"> Tinc paper i llapis preparats i sé que el progrés no es desa.</label><div class="story-button-row"><button class="button" data-action="start" disabled>Iniciar la primera prova</button></div></main>`;
+  return `<main id="main" tabindex="-1" class="animate-in"><div class="story-title"><div><p class="eyebrow">El que ha passat fins ara</p><h1>UNA MISSIÓ.<br>UNA OPORTUNITAT.</h1></div><p>Llegeix les vinyetes i prepara’t per ajudar NORA. El compte enrere encara no està en marxa.</p></div><section class="comic-grid" aria-label="Còmic de la missió">${captions.map((caption,i)=>`<article class="comic-panel"><div class="comic-scene" style="background-position:${(i%3)*50}% ${Math.floor(i/3)*100}%" role="img" aria-label="Vinyeta ${i+1} de l’aventura espacial"></div><span class="panel-num" aria-hidden="true">${i+1}</span><p class="comic-caption">${e(caption)}</p></article>`).join('')}</section><div class="story-rules"><p><strong>Els 45 minuts comencen amb la primera prova.</strong> El rellotge no s’atura amb els errors ni amb les pistes. La missió acaba després de les 12 proves o quan s’esgota el temps.</p><span class="eyebrow" style="margin:0;white-space:nowrap">8 de 12 per tornar</span></div><p id="image-preparation" class="motion-note" role="status" aria-live="polite"></p><label class="ready"><input type="checkbox" id="ready"> Tinc paper i llapis preparats i sé que el progrés no es desa.</label><div class="story-button-row"><button class="button" data-action="start" disabled>Iniciar la primera prova</button></div></main>`;
 }
 function trial() {
   const t=mission.trial;
@@ -48,7 +102,7 @@ function trial() {
 }
 function victory() {
   const t=mission.trial;
-  return `<main id="main" tabindex="-1" class="animate-in">${hud()}<section class="celebration"><div class="celebration-bg">${image('assets/victory.webp','La tripulació celebra la reparació d’un sistema de la nau')}</div><div class="celebration-copy"><p class="eyebrow">Prova ${t.n} completada</p><h1>SISTEMA<br>RECUPERAT!</h1><p>${e(t.unlock)}</p><div class="award">UN ENCERT MÉS · ${mission.correct}/12</div><p>${mission.attempts > 0 ? 'Has aprofitat les pistes i has resolt el repte. L’encert compta igual!' : 'Els teus càlculs són correctes. Bona feina!'}</p><button class="button cyan" data-action="next">${t.n === 12 ? 'Intentar l’aterratge' : 'Passar a la prova següent'}</button></div><div class="confetti" aria-hidden="true">${Array.from({length:22},(_,i)=>`<i style="left:${(i*17)%100}%;animation-delay:${(i%7)*.09}s"></i>`).join('')}</div></section></main>`;
+  return `<main id="main" tabindex="-1" class="animate-in">${hud()}<section class="celebration"><div class="celebration-bg">${image('assets/victory-v2.webp','La tripulació celebra la reparació d’un sistema de la nau')}</div><div class="celebration-copy"><p class="eyebrow">Prova ${t.n} completada</p><h1>SISTEMA<br>RECUPERAT!</h1><p>${e(t.unlock)}</p><div class="award">UN ENCERT MÉS · ${mission.correct}/12</div><p>${mission.attempts > 0 ? 'Has aprofitat les pistes i has resolt el repte. L’encert compta igual!' : 'Els teus càlculs són correctes. Bona feina!'}</p><button class="button cyan" data-action="next">${t.n === 12 ? 'Intentar l’aterratge' : 'Passar a la prova següent'}</button></div><div class="confetti" aria-hidden="true">${Array.from({length:22},(_,i)=>`<i style="left:${(i*17)%100}%;animation-delay:${(i%7)*.09}s"></i>`).join('')}</div></section></main>`;
 }
 function solution() {
   const t=mission.trial;
@@ -56,7 +110,7 @@ function solution() {
 }
 function ending() {
   const win=mission.reason === 'success', timeout=mission.reason === 'timeout';
-  return `<main id="main" tabindex="-1" class="animate-in"><div class="ending-scores"><span class="ok"><strong>${mission.correct}</strong> ${mission.correct === 1 ? 'encert' : 'encerts'}</span><span class="bad"><strong>${mission.failed}</strong> ${mission.failed === 1 ? 'fallada' : 'fallades'}</span>${timeout?`<span><strong>${12-mission.outcomes.length}</strong> proves pendents</span>`:''}</div><section class="outcome-art ${win?'success':'failure crash-flight'} ${timeout?'timeout':''}" aria-label="${win?'Animació de l’aterratge satisfactori':'Animació de l’explosió de la nau'}"><div class="outcome-bg">${image('assets/landing.webp','Una plataforma d’aterratge a la Terra')}</div>${image('assets/rocket-landed.webp','El coet Orió durant l’aterratge','landing-rocket')}${!win?image('assets/crash.webp','Una gran explosió de còmic a la plataforma','explosion-layer'):''}<div class="ending-title"><h1>${win?'MISSIÓ COMPLETADA!':'MISSIÓ FALLIDA'}</h1><p>${win?'La nau Orió ha aterrat. Has tornat a la Terra!':timeout?'El temps s’ha esgotat. La nau no ha pogut tornar a casa.':'La nau s’ha bolcat durant l’aterratge. Calien 8 encerts per tornar a casa.'}</p></div></section><div class="ending-controls"><p>${win?`Has resolt ${mission.correct} de les 12 proves. Els teus càlculs han fet possible el retorn.`:timeout?'Els 45 minuts han arribat a zero. Prepara de nou paper i llapis i torna a intentar la missió.':`Has resolt ${mission.correct} de les 12 proves. Revisa els procediments que t’han costat i torna-ho a provar.`}</p><button class="button" data-action="restart">${win?'Tornar a jugar':'Ho tornes a intentar?'}</button></div>${branding()}</main>`;
+  return `<main id="main" tabindex="-1" class="animate-in"><div class="ending-scores"><span class="ok"><strong>${mission.correct}</strong> ${mission.correct === 1 ? 'encert' : 'encerts'}</span><span class="bad"><strong>${mission.failed}</strong> ${mission.failed === 1 ? 'fallada' : 'fallades'}</span>${timeout?`<span><strong>${12-mission.outcomes.length}</strong> proves pendents</span>`:''}</div><section class="outcome-art ${win?'success':'failure crash-flight'} ${timeout?'timeout':''}" aria-label="${win?'Animació de l’aterratge satisfactori':'Animació de l’explosió de la nau'}"><div class="outcome-bg">${image('assets/landing-v2.webp','Una plataforma d’aterratge a la Terra')}</div>${image('assets/rocket-landed-v2.webp','El coet Orió durant l’aterratge','landing-rocket')}${!win?image('assets/crash-v2.webp','Una gran explosió de còmic a la plataforma','explosion-layer'):''}<div class="ending-title"><h1>${win?'MISSIÓ COMPLETADA!':'MISSIÓ FALLIDA'}</h1><p>${win?'La nau Orió ha aterrat. Has tornat a la Terra!':timeout?'El temps s’ha esgotat. La nau no ha pogut tornar a casa.':'La nau s’ha bolcat durant l’aterratge. Calien 8 encerts per tornar a casa.'}</p></div></section><div class="ending-controls"><p>${win?`Has resolt ${mission.correct} de les 12 proves. Els teus càlculs han fet possible el retorn.`:timeout?'Els 45 minuts han arribat a zero. Prepara de nou paper i llapis i torna a intentar la missió.':`Has resolt ${mission.correct} de les 12 proves. Revisa els procediments que t’han costat i torna-ho a provar.`}</p><button class="button" data-action="restart">${win?'Tornar a jugar':'Ho tornes a intentar?'}</button></div>${branding()}</main>`;
 }
 
 function render(focus = true) {
@@ -66,10 +120,7 @@ function render(focus = true) {
     document.querySelector('#main')?.focus({preventScroll:true});
     window.scrollTo({top:0,behavior:'instant'});
   }
-  if (mission.stage==='trial') {
-    const next=TRIALS[mission.index+1];
-    if(next) { const preload=new Image(); preload.src='./'+next.image; }
-  }
+  updatePreparation();
 }
 function beginEndingSound() {
   endingSounds.forEach(clearTimeout); endingSounds=[];
@@ -83,7 +134,7 @@ function beginEndingSound() {
   }
 }
 root.addEventListener('change',event=>{
-  if(event.target.id==='ready') document.querySelector('[data-action="start"]').disabled=!event.target.checked;
+  if(event.target.id==='ready') updatePreparation();
 });
 root.addEventListener('click',async event=>{
   const button=event.target.closest('[data-action]');
@@ -96,8 +147,10 @@ root.addEventListener('click',async event=>{
     return;
   }
   if(action==='story') {
-    await sound.unlock(); mission.story(); render();
-  } else if(action==='start' && document.querySelector('#ready')?.checked) {
+    await sound.unlock(); mission.story(); render(); prepareMissionImages();
+  } else if(action==='start' && loadingError) {
+    prepareMissionImages();
+  } else if(action==='start' && assetsReady && document.querySelector('#ready')?.checked) {
     await sound.unlock(); mission.start(); render();
   } else if(action==='next') {
     mission.next(); values=[];feedback='';render();
