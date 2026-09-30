@@ -24,7 +24,7 @@ export const TRIALS = [
       "4.876 + 3.958 + 6.247 + 2.819 = 17.900 J.",
       "A les unitats sumes 30: escrius 0 i portes 3. A les desenes sumes 29, i a les centenes també 29: en tots dos casos escrius 9 i portes 2. La columna dels milers dona 17."
     ],
-    "image": "assets/trial-01-v2.webp",
+    "image": "assets/trial-01-v3.webp",
     "alt": "Il·lustració de còmic espacial del sistema inventari de bateries"
   },
   {
@@ -53,7 +53,7 @@ export const TRIALS = [
       "Quan no pots restar en una columna, reorganitza una unitat de l’ordre superior. Cal passar pels zeros sense oblidar de reduir les columnes d’on prens una unitat.",
       "Comprovació: 11.275 + 8.765 = 20.040."
     ],
-    "image": "assets/trial-02-v2.webp",
+    "image": "assets/trial-02-v3.webp",
     "alt": "Il·lustració de còmic espacial del sistema dipòsit de combustible"
   },
   {
@@ -81,7 +81,7 @@ export const TRIALS = [
       "1.248 × 4 = 4.992; 1.248 × 20 = 24.960.",
       "Suma els productes parcials: 4.992 + 24.960 = 29.952 plaques."
     ],
-    "image": "assets/trial-03-v2.webp",
+    "image": "assets/trial-03-v3.webp",
     "alt": "Il·lustració de còmic espacial del sistema plaques del casc"
   },
   {
@@ -110,7 +110,7 @@ export const TRIALS = [
       "Després de dividir 8 i 6, queda 6; en baixar el 4, 64 : 8 = 8. En baixar el zero final, cal escriure 0 al quocient. El zero interior també és necessari: en dividir 6 entre 8, hi escrius 0.",
       "Comprovació: 1.080 × 8 = 8.640."
     ],
-    "image": "assets/trial-04-v2.webp",
+    "image": "assets/trial-04-v3.webp",
     "alt": "Il·lustració de còmic espacial del sistema reserva hídrica"
   },
   {
@@ -138,7 +138,7 @@ export const TRIALS = [
       "7.638 + 4.857 + 6.924 + 3.576 + 5.809 = 28.804 registres.",
       "Unitats: 34, escrius 4 i portes 3. Desenes: 30, escrius 0 i portes 3. Centenes: 38, escrius 8 i portes 3. Milers: 28."
     ],
-    "image": "assets/trial-05-v2.webp",
+    "image": "assets/trial-05-v3.webp",
     "alt": "Il·lustració de còmic espacial del sistema recuperació de dades"
   },
   {
@@ -167,7 +167,7 @@ export const TRIALS = [
       "En reorganitzar el minuend, tens 2 desenes de miler, 9 milers, 9 centenes, 9 desenes i 12 unitats. Ja pots restar columna per columna.",
       "Comprovació: 11.256 + 18.746 = 30.002."
     ],
-    "image": "assets/trial-06-v2.webp",
+    "image": "assets/trial-06-v3.webp",
     "alt": "Il·lustració de còmic espacial del sistema escut tèrmic"
   },
   {
@@ -195,7 +195,7 @@ export const TRIALS = [
       "2.364 × 8 = 18.912; 2.364 × 20 = 47.280; 2.364 × 100 = 236.400.",
       "18.912 + 47.280 + 236.400 = 302.592 J. Desplaça correctament els productes de les desenes i les centenes."
     ],
-    "image": "assets/trial-07-v2.webp",
+    "image": "assets/trial-07-v3.webp",
     "alt": "Il·lustració de còmic espacial del sistema panells solars"
   },
   {
@@ -224,7 +224,7 @@ export const TRIALS = [
       "57 : 24 dona 2 i residu 9. En baixar el 9 tens 99: dona 4 i residu 3. En baixar el 6 tens 36: dona 1 i residu 12. En baixar el 0 tens 120: dona 5 i residu 0.",
       "Comprovació: 2.415 × 24 = 57.960."
     ],
-    "image": "assets/trial-08-v2.webp",
+    "image": "assets/trial-08-v3.webp",
     "alt": "Il·lustració de còmic espacial del sistema càrrega dels mòduls"
   },
   {
@@ -258,7 +258,7 @@ export const TRIALS = [
       "Després resta el consum de l’energia inicial: 25.000 − 14.976 = 10.024 J.",
       "Comprovació: 14.976 + 10.024 = 25.000."
     ],
-    "image": "assets/trial-09-v2.webp",
+    "image": "assets/trial-09-v3.webp",
     "alt": "Il·lustració de còmic espacial del sistema circuit de comunicacions"
   },
   {
@@ -292,7 +292,7 @@ export const TRIALS = [
       "Es poden preparar 390 càpsules completes i sobren 15 racions. No arrodoneixis a 391: no hi ha prou racions per omplir una altra càpsula.",
       "Comprovació: 125 × 390 + 15 = 48.765; el residu 15 és menor que 125."
     ],
-    "image": "assets/trial-10-v2.webp",
+    "image": "assets/trial-10-v3.webp",
     "alt": "Il·lustració de còmic espacial del sistema càpsules de reserva"
   },
   {
@@ -320,7 +320,7 @@ export const TRIALS = [
       "48 × 25 = 1.200; 360 : 12 = 30.",
       "1.200 − 30 = 1.170."
     ],
-    "image": "assets/trial-11-v2.webp",
+    "image": "assets/trial-11-v3.webp",
     "alt": "Il·lustració de còmic espacial del sistema control de trajectòria"
   },
   {
@@ -360,7 +360,7 @@ export const TRIALS = [
       "Finalment reparteix l’energia restant: 16.352 : 16 = 1.022 J per impuls.",
       "Comprovació: 1.022 × 16 + 7.648 = 24.000."
     ],
-    "image": "assets/trial-12-v2.webp",
+    "image": "assets/trial-12-v3.webp",
     "alt": "Il·lustració de còmic espacial del sistema motor de retorn"
   }
 ];
