@@ -6,3 +6,5 @@
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-delay:0ms!important;transition:none!important;scroll-behavior:auto!important}.ending-title{opacity:1}.explosion-layer{opacity:1}.confetti{display:none}.outcome-art.failure{animation:none}}
 
 .success .ending-title{inset:24px 24px auto}.celebration{min-height:480px}.celebration-copy{padding:32px 42px}.celebration h1{font-size:clamp(3.6rem,6vw,5.2rem)}
+
+.jjb-branding{display:flex;justify-content:flex-end;margin-top:18px}.jjb-branding img{width:156px;height:auto;object-fit:contain;border-radius:3px;opacity:.85}
