@@ -1,0 +1,139 @@
+[
+  {
+    "name": "cover",
+    "prompt": "Use case: illustration-story. Asset type: original educational space adventure comic webapp illustration. Landscape 1536x1024. Style: bold black ink outlines, halftone dots, saturated midnight navy, cyan, vermilion, cream and gold, energetic European science-fiction adventure comic appropriate for twelve-year-olds. No text of any kind, no letters, numbers, words, labels, logos, watermarks. White and red retro rocket above curved blue Earth, dramatic dense stars, heroic upward diagonal flight, fiery orange exhaust, adventure cover composition.",
+    "mode": "built-in image_gen",
+    "output": "cover.webp",
+    "originalHint": "Generated images are saved to C:\\Users\\juan\\.codex\\generated_images\\01a0f42f-8d3a-7882-a51c-5eda56f89f34 as C:\\Users\\juan\\.codex\\generated_images\\01a0f42f-8d3a-7882-a51c-5eda56f89f34\\exec-4cba7006-b277-4b6b-b39a-e2688b191050.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  {
+    "name": "story",
+    "prompt": "Use case: illustration-story. Asset type: original educational space adventure comic webapp illustration. Landscape 1536x1024. Style: bold black ink outlines, halftone dots, saturated midnight navy, cyan, vermilion, cream and gold, energetic European science-fiction adventure comic appropriate for twelve-year-olds. No text of any kind, no letters, numbers, words, labels, logos, watermarks. Six-panel comic page in exactly three columns and two rows: top left three young student astronauts aboard white-red expedition rocket; top middle micrometeorites hitting hull; top right damaged cockpit with a friendly cyan holographic female AI face; bottom left crew repairs systems using pencil and blank paper; bottom middle giant antenna connects to Earth depicted as blue planet; bottom right crew prepares landing in cockpit. Clear black panel borders. Absolutely no speech bubbles or written captions.",
+    "mode": "built-in image_gen",
+    "output": "story.webp",
+    "originalHint": "Generated images are saved to C:\\Users\\juan\\.codex\\generated_images\\01a0f42f-8d3a-7882-a51c-5eda56f89f34 as C:\\Users\\juan\\.codex\\generated_images\\01a0f42f-8d3a-7882-a51c-5eda56f89f34\\exec-0b677a54-e9fd-4edf-98ad-af718c9490c5.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  {
+    "name": "trial-01",
+    "prompt": "Use case: illustration-story. Asset type: original educational space adventure comic webapp illustration. Landscape 1536x1024. Style: bold black ink outlines, halftone dots, saturated midnight navy, cyan, vermilion, cream and gold, energetic European science-fiction adventure comic appropriate for twelve-year-olds. No text of any kind, no letters, numbers, words, labels, logos, watermarks. Inside spacecraft battery bay, large modular batteries with cyan electric cores, cable connectors and energetic sparks, astronaut gloved hand replacing a power cell.",
+    "mode": "built-in image_gen",
+    "output": "trial-01.webp",
+    "originalHint": "Generated images are saved to C:\\Users\\juan\\.codex\\generated_images\\01a0f42f-8d3a-7882-a51c-5eda56f89f34 as C:\\Users\\juan\\.codex\\generated_images\\01a0f42f-8d3a-7882-a51c-5eda56f89f34\\exec-eabfeb5c-9292-4c19-b61c-2a0054d5671d.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  {
+    "name": "trial-02",
+    "prompt": "Use case: illustration-story. Original landscape 1536x1024 space adventure comic, bold black ink, dense halftone, midnight navy cyan vermilion cream gold with magenta purple highlights. Close-up giant spacecraft fuel tank chamber, rounded red metallic reservoir connected to thick glowing cyan pipes and pressure mechanisms, student astronaut cautiously inspecting tank, dramatic diagonal perspective. Educational adventure for twelve-year-olds. No text, letters, numbers, labels, bubbles, logos or watermarks.",
+    "mode": "built-in image_gen",
+    "output": "trial-02.webp",
+    "originalHint": "Generated images are saved to C:\\Users\\juan\\.codex\\generated_images\\01a0f42f-8d3a-7882-a51c-5eda56f89f34 as C:\\Users\\juan\\.codex\\generated_images\\01a0f42f-8d3a-7882-a51c-5eda56f89f34\\exec-f12e9e71-4c3c-4d73-9ef8-be5a7e64e5f5.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  {
+    "name": "trial-03",
+    "prompt": "Use case: illustration-story. Asset type: original educational space adventure comic webapp illustration. Landscape 1536x1024. Style: bold black ink outlines, halftone dots, saturated midnight navy, cyan, vermilion, cream and gold, energetic European science-fiction adventure comic appropriate for twelve-year-olds. No text of any kind, no letters, numbers, words, labels, logos, watermarks.  Purple and magenta highlights. Damaged exterior spacecraft hull with rectangular repair plates, two tiny friendly repair robots welding punctures, blue Earth far below, golden welding sparks.",
+    "mode": "built-in image_gen",
+    "output": "trial-03.webp",
+    "originalHint": "Generated images are saved to C:\\Users\\juan\\.codex\\generated_images\\01a0f42f-8d3a-7882-a51c-5eda56f89f34 as C:\\Users\\juan\\.codex\\generated_images\\01a0f42f-8d3a-7882-a51c-5eda56f89f34\\exec-04f12f95-2c27-4315-b99b-949768af2886.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  {
+    "name": "trial-04",
+    "prompt": "Use case: illustration-story. Asset type: original educational space adventure comic webapp illustration. Landscape 1536x1024. Style: bold black ink outlines, halftone dots, saturated midnight navy, cyan, vermilion, cream and gold, energetic European science-fiction adventure comic appropriate for twelve-year-olds. No text of any kind, no letters, numbers, words, labels, logos, watermarks.  Purple and magenta highlights. Interior spacecraft water recycling room, several large transparent cylindrical water tanks full of vivid blue water at visibly different levels, pipes and valves, clean dramatic close perspective.",
+    "mode": "built-in image_gen",
+    "output": "trial-04.webp",
+    "originalHint": "Generated images are saved to C:\\Users\\juan\\.codex\\generated_images\\01a0f42f-8d3a-7882-a51c-5eda56f89f34 as C:\\Users\\juan\\.codex\\generated_images\\01a0f42f-8d3a-7882-a51c-5eda56f89f34\\exec-949e00f8-8c43-4a3a-a8ac-19327bd43501.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  {
+    "name": "trial-05",
+    "prompt": "Use case: illustration-story. Asset type: original educational space adventure comic webapp illustration. Landscape 1536x1024. Style: bold black ink outlines, halftone dots, saturated midnight navy, cyan, vermilion, cream and gold, energetic European science-fiction adventure comic appropriate for twelve-year-olds. No text of any kind, no letters, numbers, words, labels, logos, watermarks. Spacecraft data archive room, tall server banks, glowing holographic geometric data fragments and blank screens, young astronaut retrieves a crystalline storage cube, mysterious technological chamber, diagonal perspective.",
+    "mode": "built-in image_gen",
+    "output": "trial-05.webp",
+    "originalHint": "Generated images are saved to C:\\Users\\juan\\.codex\\generated_images\\01a0f42f-8d3a-7882-a51c-5eda56f89f34 as C:\\Users\\juan\\.codex\\generated_images\\01a0f42f-8d3a-7882-a51c-5eda56f89f34\\exec-ca7b87a3-8863-4767-810b-d6a60fd2b236.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  {
+    "name": "trial-06",
+    "prompt": "Use case: illustration-story. Asset type: original educational space adventure comic webapp illustration. Landscape 1536x1024. Style: bold black ink outlines, halftone dots, saturated midnight navy, cyan, vermilion, cream and gold, energetic European science-fiction adventure comic appropriate for twelve-year-olds. No text of any kind, no letters, numbers, words, labels, logos, watermarks.  Purple and magenta highlights. Spacecraft thermal shield cutaway chamber, glowing orange heated shield tiles on one side, vivid cyan coolant rushing through thick curved cooling pipes on the other, dramatic contrast between extreme heat and cool water.",
+    "mode": "built-in image_gen",
+    "output": "trial-06.webp",
+    "originalHint": "Generated images are saved to C:\\Users\\juan\\.codex\\generated_images\\01a0f42f-8d3a-7882-a51c-5eda56f89f34 as C:\\Users\\juan\\.codex\\generated_images\\01a0f42f-8d3a-7882-a51c-5eda56f89f34\\exec-4154a707-0c7f-42fe-bf15-20df16dab387.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  {
+    "name": "trial-07",
+    "prompt": "Use case: illustration-story. Asset type: original educational space adventure comic webapp illustration. Landscape 1536x1024. Style: bold black ink outlines, halftone dots, saturated midnight navy, cyan, vermilion, cream and gold, energetic European science-fiction adventure comic appropriate for twelve-year-olds. No text of any kind, no letters, numbers, words, labels, logos, watermarks.  Purple and magenta highlights. Huge angular blue solar panel wings extended from white red retro spacecraft, bright gold sunlight striking glassy grid panels, Earth crescent behind, astronaut inspecting a folding panel hinge in foreground.",
+    "mode": "built-in image_gen",
+    "output": "trial-07.webp",
+    "originalHint": "Generated images are saved to C:\\Users\\juan\\.codex\\generated_images\\01a0f42f-8d3a-7882-a51c-5eda56f89f34 as C:\\Users\\juan\\.codex\\generated_images\\01a0f42f-8d3a-7882-a51c-5eda56f89f34\\exec-71c71529-635b-438e-b308-48b53477792b.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  {
+    "name": "trial-08",
+    "prompt": "Use case: illustration-story. Asset type: original educational space adventure comic webapp illustration. Landscape 1536x1024. Style: bold black ink outlines, halftone dots, saturated midnight navy, cyan, vermilion, cream and gold, energetic European science-fiction adventure comic appropriate for twelve-year-olds. No text of any kind, no letters, numbers, words, labels, logos, watermarks.  Purple and magenta highlights. Spacecraft energy distribution bay, chunky removable red gold power modules arranged in a circular generator, brilliant cyan arcs of energy linking modules, huge central core, mechanical switches and cables, close low-angle perspective.",
+    "mode": "built-in image_gen",
+    "output": "trial-08.webp",
+    "originalHint": "Generated images are saved to C:\\Users\\juan\\.codex\\generated_images\\01a0f42f-8d3a-7882-a51c-5eda56f89f34 as C:\\Users\\juan\\.codex\\generated_images\\01a0f42f-8d3a-7882-a51c-5eda56f89f34\\exec-c001a235-393a-4f07-9462-7210656449a8.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  {
+    "name": "trial-09",
+    "prompt": "Use case: illustration-story. Asset type: original educational space adventure comic webapp illustration. Landscape 1536x1024. Style: bold black ink outlines, halftone dots, saturated midnight navy, cyan, vermilion, cream and gold, energetic European science-fiction adventure comic appropriate for twelve-year-olds. No text of any kind, no letters, numbers, words, labels, logos, watermarks.  Purple and magenta highlights. Exterior huge parabolic communications antenna on white red spacecraft pointed toward blue Earth, prominent portable cyan battery pack attached to antenna base with thick cable, gold concentric radio waves without lettering, dynamic cosmic view.",
+    "mode": "built-in image_gen",
+    "output": "trial-09.webp",
+    "originalHint": "Generated images are saved to C:\\Users\\juan\\.codex\\generated_images\\01a0f42f-8d3a-7882-a51c-5eda56f89f34 as C:\\Users\\juan\\.codex\\generated_images\\01a0f42f-8d3a-7882-a51c-5eda56f89f34\\exec-53bc0fc0-f9b9-44ba-ada4-80d2858afa43.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  {
+    "name": "trial-10",
+    "prompt": "Use case: illustration-story. Asset type: original educational space adventure comic webapp illustration. Landscape 1536x1024. Style: bold black ink outlines, halftone dots, saturated midnight navy, cyan, vermilion, cream and gold, energetic European science-fiction adventure comic appropriate for twelve-year-olds. No text of any kind, no letters, numbers, words, labels, logos, watermarks.  Purple and magenta highlights. Spacecraft galley with stacks of red and cream food supply capsules and sealed containers, floating fresh fruit and compact food packets without labels, young student astronaut arranging supplies, warm gold light and cyan window, adventure comic.",
+    "mode": "built-in image_gen",
+    "output": "trial-10.webp",
+    "originalHint": "Generated images are saved to C:\\Users\\juan\\.codex\\generated_images\\01a0f42f-8d3a-7882-a51c-5eda56f89f34 as C:\\Users\\juan\\.codex\\generated_images\\01a0f42f-8d3a-7882-a51c-5eda56f89f34\\exec-3636e12e-590c-4ee4-951b-6173299eac4d.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  {
+    "name": "trial-11",
+    "prompt": "Use case: illustration-story. Asset type: original educational space adventure comic webapp illustration. Landscape 1536x1024. Style: bold black ink outlines, halftone dots, saturated midnight navy, cyan, vermilion, cream and gold, energetic European science-fiction adventure comic appropriate for twelve-year-olds. No text of any kind, no letters, numbers, words, labels, logos, watermarks.  Purple and magenta highlights. Navigation cockpit of white red expedition rocket, wide panoramic window with enormous blue Earth directly ahead, three student astronauts seen from behind operating glowing cyan controls with only abstract geometric icons, holographic orbital arcs and globe without text, dramatic incoming approach.",
+    "mode": "built-in image_gen",
+    "output": "trial-11.webp",
+    "originalHint": "Generated images are saved to C:\\Users\\juan\\.codex\\generated_images\\01a0f42f-8d3a-7882-a51c-5eda56f89f34 as C:\\Users\\juan\\.codex\\generated_images\\01a0f42f-8d3a-7882-a51c-5eda56f89f34\\exec-5d0d453e-6877-47b8-b093-19fdfb40d316.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  {
+    "name": "trial-12",
+    "prompt": "Use case: illustration-story. Asset type: original educational space adventure comic webapp illustration. Landscape 1536x1024. Style: bold black ink outlines, halftone dots, saturated midnight navy, cyan, vermilion, cream and gold, energetic European science-fiction adventure comic appropriate for twelve-year-olds. No text of any kind, no letters, numbers, words, labels, logos, watermarks.  Purple and magenta highlights. Main rocket engine chamber, enormous circular thrust nozzle and complex red gold turbine assembly, cyan ignition core turning into huge golden orange flame, two tiny maintenance robots at bottom for scale, dramatic mechanical engineering adventure, cutaway of rear spacecraft.",
+    "mode": "built-in image_gen",
+    "output": "trial-12.webp",
+    "originalHint": "Generated images are saved to C:\\Users\\juan\\.codex\\generated_images\\01a0f42f-8d3a-7882-a51c-5eda56f89f34 as C:\\Users\\juan\\.codex\\generated_images\\01a0f42f-8d3a-7882-a51c-5eda56f89f34\\exec-b366d800-cdef-4fb6-b3f4-42f9f58d8b91.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  {
+    "name": "victory",
+    "prompt": "Use case: illustration-story. Asset type: original educational space adventure comic webapp illustration. Landscape 1536x1024. Style: bold black ink outlines, halftone dots, saturated midnight navy, cyan, vermilion, cream and gold, energetic European science-fiction adventure comic appropriate for twelve-year-olds. No text of any kind, no letters, numbers, words, labels, logos, watermarks.  Purple and magenta highlights. Three student astronauts triumphantly celebrating in repaired spacecraft cockpit, one brown-haired boy, one red-haired girl and one dark-skinned boy, white cream suits with red trim, high five and raised hands, huge blue Earth outside window, friendly cyan female holographic AI smiling beside them, joyful triumphant sunlight.",
+    "mode": "built-in image_gen",
+    "output": "victory.webp",
+    "originalHint": "Generated images are saved to C:\\Users\\juan\\.codex\\generated_images\\01a0f42f-8d3a-7882-a51c-5eda56f89f34 as C:\\Users\\juan\\.codex\\generated_images\\01a0f42f-8d3a-7882-a51c-5eda56f89f34\\exec-7f09f0c4-14e7-4db2-9d07-7f7f0375120c.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  {
+    "name": "landing",
+    "prompt": "Use case: illustration-story. Asset type: original educational space adventure comic webapp illustration. Landscape 1536x1024. Style: bold black ink outlines, halftone dots, saturated midnight navy, cyan, vermilion, cream and gold, energetic European science-fiction adventure comic appropriate for twelve-year-olds. No text of any kind, no letters, numbers, words, labels, logos, watermarks.  Purple and magenta highlights. Earth futuristic coastal spaceport landscape at golden sunset, mountains sea clouds and green hills in distance, ground-level wide cinematic view with an EMPTY large circular metal landing pad clearly centered in lower middle, clean open sky above center for animated rocket placement. Spaceport towers and structures on far left and far right. NO rocket, NO spacecraft, NO people, NO text. The center landing platform must be unobstructed.",
+    "mode": "built-in image_gen",
+    "output": "landing.webp",
+    "originalHint": "Generated images are saved to C:\\Users\\juan\\.codex\\generated_images\\01a0f42f-8d3a-7882-a51c-5eda56f89f34 as C:\\Users\\juan\\.codex\\generated_images\\01a0f42f-8d3a-7882-a51c-5eda56f89f34\\exec-2e8e8564-8fb2-4099-95cd-b2ff0490c860.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  {
+    "name": "crash",
+    "prompt": "Use case: illustration-story. Asset type: original educational space adventure comic webapp illustration. Landscape 1536x1024. Style: bold black ink outlines, halftone dots, saturated midnight navy, cyan, vermilion, cream and gold, energetic European science-fiction adventure comic appropriate for twelve-year-olds. No text of any kind, no letters, numbers, words, labels, logos, watermarks.  Purple and magenta highlights. Huge cinematic explosion at empty Earth coastal spaceport landing pad, gigantic orange golden fireball, billowing black purple smoke, scattered small metal fragments, dramatic black comic speed lines and shockwave, blue sky, futuristic towers far sides, bold theatrical adventure ending. No humans, no injury, no gore. NO words or sound-effect text.",
+    "mode": "built-in image_gen",
+    "output": "crash.webp",
+    "originalHint": "Generated images are saved to C:\\Users\\juan\\.codex\\generated_images\\01a0f42f-8d3a-7882-a51c-5eda56f89f34 as C:\\Users\\juan\\.codex\\generated_images\\01a0f42f-8d3a-7882-a51c-5eda56f89f34\\exec-dcd181b2-ce3a-4930-b4b9-9cbe7916c795.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  {
+    "name": "rocket",
+    "prompt": "Use case: illustration-story. Asset type: transparent sprite for animated landing. ONE white cream and vermilion red retro rocket standing perfectly VERTICAL, nose pointing straight UP, symmetrical front view, rounded red cone, circular cyan porthole, three red fins, complete rocket in frame with generous transparent margins, small orange golden engine exhaust beneath. Bold black comic ink outlines, halftone dots, midnight navy shadows, cyan gold accents, energetic European space adventure for twelve-year-olds. Portrait 1024x1536. Genuinely transparent background with alpha. No ground, no scenery, no shadows beyond rocket, no text, letters, words, numbers, logos or watermark.",
+    "mode": "built-in image_gen",
+    "output": "rocket.png",
+    "originalHint": "Generated images are saved to C:\\Users\\juan\\.codex\\generated_images\\01a0f42f-8d3a-7882-a51c-5eda56f89f34 as C:\\Users\\juan\\.codex\\generated_images\\01a0f42f-8d3a-7882-a51c-5eda56f89f34\\exec-1723ea2d-ac8e-4447-9cae-1087c8654ba7.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  {
+    "name": "rocket-landed",
+    "prompt": "Use case: precise-object-edit. Edit target: supplied rocket.png transparent sprite. Change ONLY this: remove all orange engine flames, sparks, exhaust plume and exhaust glow beneath and behind the rocket, so the engine is completely stopped. Preserve the exact existing rocket shape, vertical front view, red cone and fins, cream white hull, gold metal trims, cyan circular porthole, black comic ink outlines and halftone texture. Preserve the original portrait 1024x1536 canvas and rocket position. Do not add legs, scenery, landing pad, shadows or any object. The surrounding background and the entire area previously occupied by flame must be genuinely transparent alpha, no solid black, no checkerboard artwork. The result is a flame-free version of this same rocket for a landing animation. No text, labels or watermark.",
+    "mode": "built-in image_gen edit",
+    "input": "rocket.png",
+    "output": [
+      "rocket-landed.png",
+      "rocket-landed.webp"
+    ],
+    "originalHint": "Generated images are saved to C:\\Users\\juan\\.codex\\generated_images\\01a0f42f-8d3a-7882-a51c-5eda56f89f34 as C:\\Users\\juan\\.codex\\generated_images\\01a0f42f-8d3a-7882-a51c-5eda56f89f34\\exec-902efa97-ddea-442e-9c97-378574a8939d.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  }
+]
